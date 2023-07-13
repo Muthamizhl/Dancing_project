@@ -1,0 +1,259 @@
+body{
+               
+  background-color:rgb(221, 140, 190);}
+
+.head,.mainbody,.righthand,.lefthand,.rightleg,.leftleg{
+  background-color: purple
+
+}
+.head{
+  display:flex;
+  width: 200px;
+  height:160px;
+  position:relative;
+  margin: 0 auto;
+
+  border-bottom: 11px;
+  top:2.5em;
+  
+  border-top-left-radius: 50%;
+  border-top-right-radius:50%;
+  
+}
+.eyes{
+  position:relative;
+
+
+  
+}
+.righti{
+  position: relative;
+  width:20px;
+  height:20px;
+  background-color: azure;
+  left:3em;
+  top:6em;
+  border-radius:80%;
+               
+}
+.lefti{
+  position: relative;
+  width:20px;
+  height:20px;
+  background-color: azure;
+  left:8em;
+  top:4.7em;
+  border-radius:90%;
+
+}
+.upbody{
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+}
+.mainbody{
+  width: 200px;
+  height:230px;
+  position:relative;
+  margin: 0 auto;
+  top: 50px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;;
+  display: flex;
+
+}
+.lefthand{
+  width: 50px;
+  height: 125px;
+  border-radius: 100px;
+  margin-top: 20px;
+  position: relative;
+  top: 4em;
+  left:-1em;
+             
+}
+.righthand{
+  width: 50px;
+  height: 125px;
+  border-radius: 100px;
+  margin-top: 20px;
+  position: relative;
+  top: 4em;
+  left:1em;
+             
+}
+.leftleg{
+  width: 50px;
+  height: 125px;
+  margin: 0 auto;
+  border-radius: 100px;
+  position:relative;
+  left:-2em;
+  top:6em;
+}
+.rightleg{
+  width: 50px;
+  height: 125px;
+  border-radius: 100px;
+  position:relative;
+  margin:0px auto;
+  top:-1.8em;
+  left:3em;
+  
+}
+.chitti:hover .head{
+  animation:mohead 2s infinite;
+ }
+.chitti:hover .mainbody {
+  border-radius: 30%;
+  animation: mochest 1.5s infinite;
+
+}
+
+.chitti:hover .lefthand {
+  animation: moleftarm 2s infinite;
+}
+
+.chitti:hover .righthand{
+  animation: morightarm 2s infinite;
+}
+
+.chitti:hover .leftleg {
+  animation: moleftleg 2s infinite;
+}
+
+.chitti:hover .rightleg {
+  animation: morightleg 2s infinite;
+}
+
+@keyframes mohead {
+  0% {
+  width: 200px;
+  }
+
+  25% {
+  width: 300px;
+  }
+
+  50% {
+  width: 200px;
+  }
+
+  75% {
+  width: 300px;
+  }
+
+  100% {
+  width: 200px;
+  }
+}
+
+@keyframes moleftarm {
+  0% {
+  transform: rotate(0deg);
+  transform-origin: top center;
+  }
+
+  25% {
+  transform: rotate(90deg);
+  transform-origin: top center;
+  }
+
+  50% {
+  transform: rotate(0deg);
+  transform-origin: top center;
+  }
+
+  75% {
+  transform: rotate(90deg);
+  transform-origin: top center;
+  }
+
+  100% {
+  transform: rotate(0deg);
+  transform-origin: top center;
+  }
+}
+
+@keyframes morightarm {
+  0% {
+  transform: rotate(0deg);
+  transform-origin: top center;
+  }
+
+  25% {
+  transform: rotate(-90deg);
+  transform-origin: top center;
+  }
+
+  50% {
+  transform: rotate(0deg);
+  transform-origin: top center;
+  }
+
+  75% {
+  transform: rotate(-90deg);
+  transform-origin: top center;
+  }
+
+  100% {
+  transform: rotate(0deg);
+  transform-origin: top center;
+  }
+}
+
+@keyframes moleftleg {
+  0% {
+  transform: rotate(0deg);
+  }
+
+  25% {
+  transform: rotate(20deg);
+  }
+
+  50% {
+  transform: rotate(0deg);
+  }
+
+  75% {
+  transform: rotate(20deg);
+  }
+
+  100% {
+  transform: rotate(0deg);
+  }
+}
+
+@keyframes morightleg {
+  0% {
+  transform: rotate(0deg);
+  }
+
+  25% {
+  transform: rotate(-20deg);
+  }
+
+  50% {
+  transform: rotate(0deg);
+  }
+
+  75% {
+  transform: rotate(-20deg);
+  }
+
+  100% {
+  transform: rotate(0deg);
+  }
+}
+
+@keyframes mochest{
+  from {
+  transform: rotate(0deg);
+  }
+
+  to {
+  transform: rotate(360deg);
+  }
+}
+
